@@ -4,18 +4,28 @@
   "private": true,
   "dependencies": {
     "@tinymce/tinymce-react": "^3.3.2",
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^24.0.23",
     "@types/react": "^16.9.13",
     "@types/react-dom": "^16.9.4",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "jest-junit": "^9.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0",
     "tinymce": "^5.1.2",
+    "ts-jest": "^24.2.0",
     "typescript": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -32,5 +42,57 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!**/*.spec.{ts,tsx}",
+      "!**/*.interface.{ts,tsx}",
+      "!**/*.stories.{ts,tsx}",
+      "!**/index.{ts,tsx}",
+      "!**/*.d.ts",
+      "!**/optimizeBuild.js",
+      "!**/polyfills.ts",
+      "!**/serviceWorker.ts",
+      "!**/setupProxy.js",
+      "!**/history.tsx",
+      "!**/polyfills.ts",
+      "!**/initSagas.ts",
+      "!**/*type.ts",
+      "!src/app/store/reducers/state.ts",
+      "!src/app/testing/**/*.{ts,tsx}"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "coverage"
+        }
+      ]
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupJest.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
+    "coverageDirectory": "./coverage",
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": "coverage"
   }
 }

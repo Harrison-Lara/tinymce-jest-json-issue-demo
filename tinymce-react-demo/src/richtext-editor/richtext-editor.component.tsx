@@ -9,6 +9,7 @@ export interface RichTextEditorProps {
 }
 const style = {
   root: {
+    background: '#fafafa',
     fontWeight: 500,
     color: 'black',
     minWidth: 200,
@@ -58,6 +59,7 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({ label, value, onChange 
           toolbar={config.toolbar}
           onEditorChange={onChange}
           value={value}
+          initialValue="click here"
         />
       </div>
     </>

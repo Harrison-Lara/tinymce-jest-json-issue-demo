@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rich Text Editor should Match the snapshot 1`] = `
+<Fragment>
+  <label
+    style={
+      Object {
+        "color": "black",
+        "fontSize": "12px",
+        "fontWeight": 500,
+      }
+    }
+  >
+    test
+  </label>
+  <div
+    className="rich-textarea"
+    style={
+      Object {
+        "background": "#fafafa",
+        "borderBottom": "1px solid rgba(0, 0, 0, 0.42)",
+        "borderTopLeftRadius": 4,
+        "borderTopRightRadius": 4,
+        "color": "black",
+        "fontWeight": 500,
+        "height": 100,
+        "lineHeight": 1,
+        "minWidth": 200,
+        "outline": "0px solid transparent",
+        "overflow": "auto",
+        "padding": 10,
+        "wordBreak": "break-all",
+      }
+    }
+  >
+    <Editor
+      cloudChannel="5"
+      init={
+        Object {
+          "browser_spellcheck": true,
+          "content_style": ".tox-tinymce { right: 64px }",
+          "font_formats": "Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif; Courier New=courier new,courier;Georgia=georgia, palatino; Helvetica=helvetica; Impact=impact, chicago; Open Sans= Open Sans;Sans- Serif=sans-serif; Symbol = symbol; Tahoma = tahoma, arial, helvetica, sans - serif;Terminal = terminal, monaco;Times New Roman = times new roman, times; Trebuchet MS = trebuchet ms,geneva; Verdana = verdana, geneva;Webdings = webdings; Wingdings = wingdings, zapf dingbats",
+          "fontsize_formats": "11px 12px 14px 16px 18px 24px 36px 48px",
+          "force_br_newlines": true,
+          "force_p_newlines": false,
+          "forced_root_block": true,
+          "insertdatetime_formats": Array [
+            "%H:%M:%S",
+            "%Y-%m-%d",
+            "%I:%M:%S %p",
+            "%D",
+          ],
+          "menubar": false,
+          "selector": ".rich-textarea",
+          "skin": false,
+          "theme": "silver",
+        }
+      }
+      initialValue="click here"
+      inline={true}
+      plugins="lists insertdatetime table searchreplace charmap code advlist link"
+      toolbar="undo redo | bold italic underline | fontselect fontsizeselect | forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | superscript subscript| link insertdatetime searchreplace charmap code"
+    />
+  </div>
+</Fragment>
+`;
