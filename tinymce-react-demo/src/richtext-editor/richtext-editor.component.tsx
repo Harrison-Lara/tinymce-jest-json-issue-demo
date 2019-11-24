@@ -1,4 +1,4 @@
-import './index';
+import './tinymce-imports';
 import * as React from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 import config from './richtext-editor.component.config';
