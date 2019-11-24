@@ -1,0 +1,11 @@
+declare module 'tinymce/tinymce.js';
+declare module 'tinymce/themes/silver/theme.min.js';
+declare module 'tinymce/plugins/lists/plugin.min.js';
+declare module 'tinymce/plugins/advlist/plugin.min.js';
+declare module 'tinymce/plugins/insertdatetime/plugin.min.js';
+declare module 'tinymce/plugins/paste/plugin.min.js';
+declare module 'tinymce/plugins/table/plugin.min.js';
+declare module 'tinymce/plugins/searchreplace/plugin.min.js';
+declare module 'tinymce/plugins/charmap/plugin.min.js';
+declare module 'tinymce/plugins/code/plugin.min.js';
+declare module 'tinymce/plugins/link/plugin.min.js';

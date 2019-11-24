@@ -1,0 +1,12 @@
+import 'tinymce/tinymce.js';
+import 'tinymce/themes/silver/theme.min.js';
+import './oxide/content.min.css';
+import './oxide/skin.min.css';
+import 'tinymce/plugins/lists/plugin.min.js';
+import 'tinymce/plugins/insertdatetime/plugin.min.js';
+import 'tinymce/plugins/table/plugin.min.js';
+import 'tinymce/plugins/searchreplace/plugin.min.js';
+import 'tinymce/plugins/charmap/plugin.min.js';
+import 'tinymce/plugins/code/plugin.min.js';
+import 'tinymce/plugins/advlist/plugin.min.js';
+import 'tinymce/plugins/link/plugin.min.js';
