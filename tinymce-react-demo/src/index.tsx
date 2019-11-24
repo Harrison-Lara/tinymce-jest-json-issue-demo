@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import { RichTextEditor } from './richtext-editor/richtext-editor.component';
+import { RichTextEditor } from 'app/components';
 
 ReactDOM.render(<RichTextEditor />, document.getElementById('root'));
 
